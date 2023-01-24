@@ -1,0 +1,19 @@
+[package]
+name = "token_balance_sweeper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = {version ="1.24.2", features = ["macros","rt-multi-thread"]}
+web3 = "0.18.0"
+reqwest = {version = "0.11.14", features = ["json"]}
+serde_json = "1.0.91"
+itertools = "0.10.5"
+serde = { version = "1.0.152", features = ["derive"] }
+log4rs = { version = "1.2.0", features = ["serde"] }
+log = { version = "0.4.17", features = ["std", "serde"] }
+chrono = "0.4.23"
+futures = "0.3.25"
+csv = "1.1.6"
